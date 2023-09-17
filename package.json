@@ -10,16 +10,28 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "papr",
-      "aliases": ["PAPR", "papr"],
-      "extensions": [".papr"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "papr",
-      "scopeName": "source.papr",
-      "path": "./syntaxes/papr.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "papr",
+        "aliases": [
+          "PAPR",
+          "papr"
+        ],
+        "extensions": [
+          ".papr"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "papr",
+        "scopeName": "source.papr",
+        "path": "./syntaxes/papr.tmLanguage.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "vsce": "^2.15.0"
   }
 }

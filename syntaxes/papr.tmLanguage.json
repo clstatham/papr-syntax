@@ -16,6 +16,9 @@
 		},
 		{
 			"include": "#classes"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -48,6 +51,19 @@
 				{
 					"name": "variable.other.papr",
 					"match": "\\b[a-z][a-zA-Z0-9_]*\\b"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.papr",
+					"match": "//.*"
+				},
+				{
+					"name": "comment.block.papr",
+					"begin": "/\\*",
+					"end": "\\*/"
 				}
 			]
 		},
