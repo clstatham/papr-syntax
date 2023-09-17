@@ -1,0 +1,25 @@
+{
+  "name": "papr-syntax",
+  "displayName": "papr-syntax",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "papr",
+      "aliases": ["PAPR", "papr"],
+      "extensions": [".papr"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "papr",
+      "scopeName": "source.papr",
+      "path": "./syntaxes/papr.tmLanguage.json"
+    }]
+  }
+}
